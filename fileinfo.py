@@ -95,3 +95,12 @@ def search():#设置‘查看成绩’所对应按钮的函数
     for each in student_list.items():#输出名字及对应的成绩
         print('姓名:',each[0],'    ','成绩:',each[1])
 mainloop()#展示
+def helloButton():
+    print('hello');
+    textbox.insert(1.0,'Hello everyone!You can input any words in the textbox.')
+
+button1=Button(top,text='Hello Button',command=helloButton).pack()
+#button2=Button(top,text='button2').pack()
+textbox=Text(top)
+textbox.pack()
+mainloop()
